@@ -1,0 +1,30 @@
+.modal-btn {
+  border-radius: 4px;
+  cursor: pointer;
+  border: 0;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    color: var(--secondary-color);
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  fill: var(--title-color);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}

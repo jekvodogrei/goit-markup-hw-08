@@ -1,0 +1,16 @@
+// .menu {
+//   display: none;
+// }
+
+.menu-contacts {
+  display: flex;
+  align-items: center;
+}
+
+.menu.list {
+  cursor: pointer;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}

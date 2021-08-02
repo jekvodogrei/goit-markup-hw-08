@@ -1,0 +1,123 @@
+.footer {
+  background-color: var(--bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &:focus,
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
+
+.footer-container {
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+}
+
+.web-link {
+  margin-right: 93px;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-span-footer {
+  color: var(--accent-color);
+}
+
+.footer-box {
+  width: auto;
+  height: 252px;
+  left: 0px;
+  top: 2093px;
+  position: absolute;
+}
+
+.address-item-footer:not(:last-child) {
+  margin-bottom: auto;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-logo .logo {
+  color: var(--secondary-color);
+}
+
+.mail-link.footer-link,
+.tel-link.footer-link {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-link:focus,
+.address-link:hover,
+.footer-link:focus,
+.footer-link:hover {
+  color: var(--secondary-color);
+}
+
+.footer-email-container {
+  display: block;
+  flex-direction: column;
+  width: 206px;
+  height: 80px;
+  margin-left: 90px;
+  width: 100%;
+}
+
+.footer-email-container-name {
+  flex-direction: column;
+  font-family: var(--secondary-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.footer-email-name {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: var(--main-color);
+}
+
+.footer-email-field {
+  display: block;
+  position: relative;
+}

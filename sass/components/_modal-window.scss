@@ -1,0 +1,40 @@
+.modal-footer-wrapper-button {
+  display: flex;
+  display: inline-flex;
+  color: var(--secondary-color);
+  background-color: var(--button-hover-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  border: none;
+  box-shadow: 0 4px 4px rgb (0 0 0 / 15%);
+  transition: background-color 250ms var(--cubic);
+  border-radius: 4px;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
+
+.svg-modal-icon {
+  width: 40%;
+  height: 40%;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  height: 580px;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}

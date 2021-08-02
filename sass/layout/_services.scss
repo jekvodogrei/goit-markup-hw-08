@@ -1,0 +1,39 @@
+.services__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  font-family: var(--main-font);
+}
+
+.serveces__box {
+  width: 270px;
+}
+
+.serveces__box-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--team-bg);
+  border-radius: 4px;
+}
+
+.serveces__box-item {
+  width: 70px;
+  height: 70px;
+}
+
+.services {
+  margin-bottom: 100px;
+}
+
+.us-services {
+  display: flex;
+  justify-content: space-between;
+}

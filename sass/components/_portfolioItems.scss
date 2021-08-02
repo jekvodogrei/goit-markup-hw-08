@@ -1,0 +1,111 @@
+.portfolio {
+  @media screen and(min-width: 768px) {
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-columns: repeat(2, 354px);
+  }
+
+  @media screen and(min-width: 1200px) {
+    grid-template-columns: repeat(3, 370px);
+  }
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: var(--gap);
+  }
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  transition: box-shadow var(--effect-duration) var(--timing-function);
+
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &--legend {
+    padding: 20px 24px;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+
+    @media screen and(min-width: 768px) {
+      flex-grow: 1;
+      flex-direction: column;
+    }
+  }
+
+  &__project-name {
+    color: var(--color-titles);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+
+  &__project-type {
+    color: var(--color-text);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+  }
+
+  &__description {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    color: var(--color-basic);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    padding: 24px;
+    overflow: auto;
+    transition: transform var(--effect-duration) var(--timing-function);
+
+    @media screen and(min-width: 480px) {
+      padding-top: 76px;
+    }
+    @media screen and(min-width: 768px) {
+      padding-top: 48px;
+    }
+    @media screen and(min-width: 1200px) {
+      padding-top: 62px;
+    }
+  }
+}
+
+.project-item--link-wrapper {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.project-item--img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-item--link-wrapper:hover .portfolio-item__description,
+.project-item--link-wrapper:focus .portfolio-item__description {
+  transform: translateY(-100%);
+}

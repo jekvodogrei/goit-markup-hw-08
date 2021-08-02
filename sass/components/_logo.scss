@@ -1,0 +1,32 @@
+%logo {
+  display: block;
+  font-family: var(--font-brand);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.header-logo {
+  @extend %logo;
+  color: var(--color-contrast);
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+.footer-logo {
+  @extend %logo;
+  display: inline-block;
+  color: var(--color-basic);
+  padding: 0;
+  margin-bottom: 20px;
+}
+.logo--colored {
+  color: var(--color-brand);
+}

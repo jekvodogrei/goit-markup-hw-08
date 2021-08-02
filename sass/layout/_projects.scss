@@ -1,0 +1,30 @@
+.us-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.project-box {
+  background: var(--secondary-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-left: 30px;
+
+  &x:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.team-list-link-wrapper {
+  display: block;
+
+  &:hover .overlay,
+  &:focus .overlay {
+    transform: translateX(0%);
+  }
+}

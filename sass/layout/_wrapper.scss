@@ -1,0 +1,9 @@
+.team--img-wrapper {
+  position: relative;
+  overflow: hidden;
+
+  &:hover .overlay,
+  &:focus .overlay {
+    transform: translateY(0%);
+  }
+}

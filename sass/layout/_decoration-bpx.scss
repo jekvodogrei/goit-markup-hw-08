@@ -1,0 +1,19 @@
+.decoration-box {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  padding-left: 24px;
+  padding-top: 64px;
+  padding-right: 24px;
+  padding-bottom: auto;
+  transform: translateY(-100%);
+}
+
+.text-decoration-box {
+  font-family: var(--secondary-font);
+  text-align: center;
+  color: var(--secondary-color);
+  transform: translateY(-200%);
+  text-transform: uppercase;
+}
