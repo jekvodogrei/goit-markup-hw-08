@@ -1,7 +1,7 @@
 .portfolio {
   @media screen and(min-width: 768px) {
     display: grid;
-    grid-gap: var(--gap);
+    grid-gap: var(--padd);
     grid-template-columns: repeat(2, 354px);
   }
 
@@ -15,7 +15,7 @@
   overflow: hidden;
 
   &:not(:last-child) {
-    margin-bottom: var(--gap);
+    margin-bottom: var(--padd);
   }
 
   @media screen and(min-width: 768px) {
@@ -50,7 +50,7 @@
   }
 
   &__project-name {
-    color: var(--color-titles);
+    color: var(--title-color);
     font-size: 18px;
     font-weight: 700;
     line-height: 2;
@@ -59,7 +59,7 @@
   }
 
   &__project-type {
-    color: var(--color-text);
+    color: var(--text-color);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
@@ -72,7 +72,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
-    color: var(--color-basic);
+    color: var(--secondary-color);
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;

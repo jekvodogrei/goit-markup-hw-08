@@ -29,11 +29,11 @@
   font-size: 28px;
   line-height: 1.18;
 
-  color: var(--color-titles);
+  color: var(--title-color);
   font-weight: 700;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: var(--gap);
+  margin-bottom: var(--padd);
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;

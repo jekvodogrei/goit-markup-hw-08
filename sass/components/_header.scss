@@ -2,13 +2,13 @@
   border-bottom: 1px solid #ececec;
 }
 
-.header--alignment {
+.header-container {
   display: flex;
   align-items: center;
 }
 
 .menu-item {
-  color: var(--color-titles);
+  color: var(--title-color);
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -22,12 +22,12 @@
   &:hover,
   &:focus,
   &:active {
-    color: var(--color-brand);
+    color: var(--accent-color);
   }
 }
 
 .current-page {
-  color: var(--color-brand);
+  color: var(--accent-color);
 
   &::after {
     position: absolute;
@@ -35,7 +35,7 @@
     display: block;
     width: 101%;
     height: 4px;
-    background-color: var(--color-brand);
+    background-color: var(--accent-color);
     border-radius: 2px;
     bottom: 0;
   }
@@ -63,7 +63,7 @@
 
   &:hover,
   &:focus {
-    color: var(--color-brand);
+    color: var(--accent-color);
   }
 
   &__icon {
@@ -72,7 +72,7 @@
   }
 }
 
-.header--hidden {
+.header-hidden {
   display: none;
 }
 
@@ -82,11 +82,11 @@
   border: none;
   background-color: transparent;
   margin-left: auto;
-  color: var(--color-titles);
+  color: var(--title-color);
 
   &:hover,
   &:focus {
-    color: var(--color-brand);
+    color: var(--accent-color);
   }
 
   @media screen and (min-width: 768px) {
@@ -94,7 +94,7 @@
   }
 }
 
-.mobile-menu__icon {
+.burger-btn__icon {
   fill: currentColor;
 }
 
@@ -104,7 +104,7 @@
   left: 0;
   width: 100vw;
   height: 110%;
-  background-color: var(--color-basic);
+  background-color: var(--secondary-color);
   z-index: 100;
 
   opacity: 0;
@@ -129,7 +129,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  color: var(--color-titles);
+  color: var(--title-color);
 
   position: absolute;
   top: 10px;
@@ -137,7 +137,7 @@
 
   &:hover,
   &:focus {
-    color: var(--color-brand);
+    color: var(--accent-color);
   }
 }
 
@@ -154,7 +154,7 @@
 
   &__link {
     font-size: 28px;
-    color: var(--color-titles);
+    color: var(--title-color);
     font-weight: 500;
     letter-spacing: 0.02em;
     line-height: 1.18;
@@ -169,20 +169,20 @@
     }
 
     &--current {
-      color: var(--color-brand);
+      color: var(--accent-color);
     }
 
     &:hover,
     &:focus,
     &:active {
-      color: var(--color-brand);
+      color: var(--accent-color);
     }
   }
 }
 
 .mobile-menu__phone {
   text-decoration: none;
-  color: var(--color-brand);
+  color: var(--accent-color);
   font-weight: 500;
   font-size: 18px;
   line-height: 1.18;
@@ -257,7 +257,7 @@
 }
 
 .sm-list__link {
-  color: var(--color-brand);
+  color: var(--accent-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.22;
@@ -274,11 +274,11 @@
     display: none;
   }
 
-  .header--hidden {
+  .header-hidden {
     display: block;
   }
 
-  .menu--indent {
+  .header-container__item {
     position: relative;
 
     &:not(:last-child) {

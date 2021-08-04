@@ -6,36 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="container header--alignment">
-        <nav class="header--alignment">
-          <a href="./index.html" class="header-logo"
-            ><span class="logo--colored">Web</span>Studio</a
-          >
-          <div class="header--hidden">
-            <ul class="header--alignment">
-              <li class="menu--indent">
+      <div class="container header-container">
+        <nav class="header-container">
+          <a href="./index.html" class="header__logo"><span class="logo-span">Web</span>Studio</a>
+          <div class="header-hidden">
+            <ul class="header-container">
+              <li class="header-container__item">
                 <a href="./index.html" class="menu-item">Студия</a>
               </li>
-              <li class="menu--indent">
+              <li class="header-container__item">
                 <a href="./portfolio.html" class="menu-item current-page">Портфолио</a>
               </li>
-              <li class="menu--indent">
+              <li class="header-container__item">
                 <a href="#" class="menu-item">Контакты</a>
               </li>
             </ul>
@@ -44,31 +33,27 @@
 
         <button type="button" class="burger-btn" data-menu-open>
           <svg
-            class="mobile-menu__icon"
+            class="burger-btn__icon"
             width="40"
             height="40"
             aria-label="Переключатель мобильного меню"
           >
-            <use href="./images/menu_icons.svg#icon-menu"></use>
+            <use href="./images/sprite.svg#icon-menu"></use>
           </svg>
         </button>
 
-        <div class="header--hidden header__contacts--indent-left">
+        <div class="header-hidden header__contacts--indent-left">
           <ul class="header__contacts--alignment">
             <li class="header__contacts--indent">
-              <a href="mailto:info@devstudio.com" class="header-contacts"
-                ><svg width="16" height="12" class="header-contacts__icon">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a
+              <a href="mailto:info@devstudio.com" class="header-contacts">
+                <svg width="16" height="12" class="header-contacts__icon">
+                  <use href="./images/sprite.svg#icon-envelope"></use></svg>info@devstudio.com</a
               >
             </li>
             <li class="header__contacts--indent">
-              <a href="tel:+380961111111" class="header-contacts"
-                ><svg width="10" height="16" class="header-contacts__icon">
-                  <use href="./images/icons.svg#icon-cellphone"></use>
-                </svg>
-                +38 096 111 11 11</a
+              <a href="tel:+380961111111" class="header-contacts">
+                <svg width="10" height="16" class="header-contacts__icon">
+                  <use href="./images/sprite.svg#icon-cellphone"></use></svg>+38 096 111 11 11</a
               >
             </li>
           </ul>
@@ -78,13 +63,8 @@
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
           <button type="button" class="mobile-menu__close-btn" data-menu-close>
-            <svg
-              class="mobile-menu__icon"
-              width="40"
-              height="40"
-              aria-label="кнопка закрытия мобильного меню"
-            >
-              <use href="./images/menu_icons.svg#icon-close-menu"></use>
+            <svg class="burger-btn__icon" width="40" height="40"aria-label="кнопка закрытия мобильного меню">
+              <use href="./images/sprite.svg#icon-close-menu"></use>
             </svg>
           </button>
           <ul class="mobile-menu-list">
@@ -92,11 +72,7 @@
               <a href="./index.html" class="mobile-menu-list__link">Студия</a>
             </li>
             <li class="mobile-menu-list__item">
-              <a
-                href="./portfolio.html"
-                class="mobile-menu-list__link mobile-menu-list__link--current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="mobile-menu-list__link mobile-menu-list__link--current">Портфолио</a>
             </li>
             <li class="mobile-menu-list__item">
               <a href="#" class="mobile-menu-list__link">Контакты</a>
@@ -239,11 +215,9 @@
                     />
                   </picture>
                   <p class="portfolio-item__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
-                    dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
-                    tempore atque facere. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fuga, placeat, vel a dolor neque ratione fugiat officia natus odit maiores
-                    consequatur voluptatem tempore atque facere.
+                    Технокряк это современная площадка распространения коронавируса. Компании
+                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                    конкурентов
                   </p>
                 </div>
                 <div class="portfolio-item--legend">
@@ -286,9 +260,9 @@
                     />
                   </picture>
                   <p class="portfolio-item__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
-                    dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
-                    tempore atque facere.
+                    Технокряк это современная площадка распространения коронавируса. Компании
+                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                    конкурентов
                   </p>
                 </div>
                 <div class="portfolio-item--legend">
@@ -328,9 +302,9 @@
                     />
                   </picture>
                   <p class="portfolio-item__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
-                    dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
-                    tempore atque facere.
+                    Технокряк это современная площадка распространения коронавируса. Компании
+                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                    конкурентов
                   </p>
                 </div>
                 <div class="portfolio-item--legend">
@@ -368,9 +342,9 @@
                     />
                   </picture>
                   <p class="portfolio-item__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
-                    dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
-                    tempore atque facere.
+                    Технокряк это современная площадка распространения коронавируса. Компании
+                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                    конкурентов
                   </p>
                 </div>
                 <div class="portfolio-item--legend">
@@ -411,9 +385,9 @@
                     />
                   </picture>
                   <p class="portfolio-item__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
-                    dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
-                    tempore atque facere.
+                    Технокряк это современная площадка распространения коронавируса. Компании
+                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                    конкурентов
                   </p>
                 </div>
                 <div class="portfolio-item--legend">
@@ -454,9 +428,9 @@
                     />
                   </picture>
                   <p class="portfolio-item__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
-                    dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
-                    tempore atque facere.
+                    Технокряк это современная площадка распространения коронавируса. Компании
+                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                    конкурентов
                   </p>
                 </div>
                 <div class="portfolio-item--legend">
@@ -490,9 +464,9 @@
                     />
                   </picture>
                   <p class="portfolio-item__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
-                    dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
-                    tempore atque facere.
+                    Технокряк это современная площадка распространения коронавируса. Компании
+                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                    конкурентов
                   </p>
                 </div>
                 <div class="portfolio-item--legend">
@@ -533,9 +507,9 @@
                     />
                   </picture>
                   <p class="portfolio-item__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, placeat, vel a
-                    dolor neque ratione fugiat officia natus odit maiores consequatur voluptatem
-                    tempore atque facere.
+                    Технокряк это современная площадка распространения коронавируса. Компании
+                    используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                    конкурентов
                   </p>
                 </div>
                 <div class="portfolio-item--legend">
@@ -549,19 +523,21 @@
       </section>
     </main>
 
+    <!-- Footer -->
+
     <footer class="footer">
       <div class="container">
         <div class="footer--alignment">
-          <div class="footer--contacts-block">
+          <div class="footer-contacts-block">
             <a href="./index.html" class="footer-logo"
-              ><span class="logo--colored">Web</span>Studio</a
+              ><span class="logo-span">Web</span>Studio</a
             >
             <address>
               <ul>
                 <li>
                   <a
                     href="https://goo.gl/maps/4U1aCjtnUdwac2Jz8"
-                    class="address"
+                    class="footer-contacts"
                     target="_blank"
                     rel="noopener noreferrer"
                     >г. Киев, пр-т Леси Украинки, 26</a
@@ -588,7 +564,7 @@
                   aria-label="Ссылка на Instagram"
                 >
                   <svg width="20" height="20" class="sm-icon">
-                    <use href="./images/icons.svg#icon-instagram"></use>
+                    <use href="./images/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
@@ -601,7 +577,7 @@
                   aria-label="Ссылка на Twitter"
                 >
                   <svg width="20" height="20" class="sm-icon">
-                    <use href="./images/icons.svg#icon-twitter"></use>
+                    <use href="./images/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
@@ -614,7 +590,7 @@
                   aria-label="Ссылка на Facebook"
                 >
                   <svg width="20" height="20" class="sm-icon">
-                    <use href="./images/icons.svg#icon-facebook"></use>
+                    <use href="./images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
@@ -627,7 +603,7 @@
                   aria-label="Ссылка на LinkedIn"
                 >
                   <svg width="20" height="20" class="sm-icon">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
@@ -645,7 +621,7 @@
               />
               <button type="submit" class="subscribe-form__button">
                 Подписаться<svg width="24" height="24" class="subscribe-form__button-icon">
-                  <use href="./images/icons.svg#icon-send"></use>
+                  <use href="./images/sprite.svg#icon-send"></use>
                 </svg>
               </button>
             </form>

@@ -6,8 +6,8 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding-top: 10px;
   padding-bottom: 10px;
-  color: var(--color-basic);
-  background-color: var(--color-brand);
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
   font-family: inherit;
   font-size: 16px;
   font-weight: 700;
@@ -16,6 +16,6 @@
   transition: background-color var(--effect-duration) var(--timing-function);
 
   &:hover {
-    background-color: #188ce8;
+    background-color: var(--button-hover-color);
   }
 }

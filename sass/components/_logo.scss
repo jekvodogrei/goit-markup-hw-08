@@ -1,6 +1,6 @@
 %logo {
   display: block;
-  font-family: var(--font-brand);
+  font-family: var(--secondary-font);
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -9,9 +9,9 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.header-logo {
+.header__logo {
   @extend %logo;
-  color: var(--color-contrast);
+  color: var(--color-black);
 
   @media screen and (min-width: 768px) {
     margin-right: 88px;
@@ -23,10 +23,10 @@
 .footer-logo {
   @extend %logo;
   display: inline-block;
-  color: var(--color-basic);
+  color: var(--secondary-color);
   padding: 0;
   margin-bottom: 20px;
 }
-.logo--colored {
-  color: var(--color-brand);
+.logo-span {
+  color: var(--accent-color);
 }

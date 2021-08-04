@@ -1,12 +1,12 @@
 .hero__title {
   text-transform: uppercase;
-  color: var(--color-basic);
+  color: var(--secondary-color);
 
   font-size: 26px;
   line-height: 1.62;
   font-weight: 900;
   letter-spacing: 0.06em;
-  margin-bottom: var(--gap);
+  margin-bottom: var(--padd);
 
   @media screen and(min-width: 1200px) {
     font-size: 44px;

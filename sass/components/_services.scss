@@ -11,14 +11,14 @@
 }
 .services__item {
   position: relative;
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  flex-basis: calc(100% / 3 - var(--card-set--padd));
 
   &:not(:last-child) {
-    margin-right: var(--gap);
+    margin-right: var(--padd);
   }
 }
 .services__name {
-  color: var(--color-basic);
+  color: var(--secondary-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

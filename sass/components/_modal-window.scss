@@ -1,40 +1,61 @@
-.modal-footer-wrapper-button {
-  display: flex;
-  display: inline-flex;
-  color: var(--secondary-color);
-  background-color: var(--button-hover-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  border: none;
-  box-shadow: 0 4px 4px rgb (0 0 0 / 15%);
-  transition: background-color 250ms var(--cubic);
-  border-radius: 4px;
-  align-items: center;
-  padding-top: 10px;
-  padding-right: 28px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  cursor: pointer;
-
-  &:focus,
-  &:hover {
-    background-color: var(--accent-color);
-  }
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 500ms var(--timing-function);
 }
-
-.svg-modal-icon {
-  width: 40%;
-  height: 40%;
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
-
 .modal {
   position: absolute;
-  left: 50%;
+  width: 320px;
+
+  background-color: var(--secondary-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   top: 50%;
-  width: 528px;
-  height: 580px;
-  background-color: #ffffff;
-  transform: translate(-50%, -50%);
-  padding: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 500ms var(--timing-function), visibility 500ms var(--timing-function);
+
+  @media screen and(min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+.modal__close {
+  position: absolute;
+  background-color: transparent;
+  height: 30px;
+  top: 8px;
+  right: 8px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-black);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.modal__close-icon {
+  fill: currentColor;
+  transition: color var(--effect-duration) var(--timing-function);
 }

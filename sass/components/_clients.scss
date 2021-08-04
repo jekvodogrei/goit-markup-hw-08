@@ -1,7 +1,7 @@
 .clients--alignment {
   @media screen and(min-width: 480px) {
     display: grid;
-    grid-gap: var(--gap);
+    grid-gap: var(--padd);
     grid-template-columns: repeat(2, 210px);
   }
 
@@ -15,7 +15,7 @@
 }
 .clients__item {
   &:not(:last-child) {
-    margin-bottom: var(--gap);
+    margin-bottom: var(--padd);
   }
 
   @media screen and(min-width: 480px) {
@@ -25,11 +25,11 @@
   }
 }
 .client {
-  color: var(--color-faded);
+  color: var(--social-svg);
   display: inline-block;
 
   height: 92px;
-  border: 1px solid var(--color-faded);
+  border: 1px solid var(--social-svg);
   border-radius: 4px;
   transition: color var(--effect-duration) var(--timing-function),
     border var(--effect-duration) var(--timing-function);
@@ -46,7 +46,7 @@
 
   &:hover,
   &:focus {
-    color: var(--color-brand);
-    border: 1px solid var(--color-brand);
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
   }
 }

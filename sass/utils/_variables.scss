@@ -1,15 +1,33 @@
 :root {
-  --color-basic: #ffffff;
-  --color-contrast: #000000;
-  --color-light-bg: #f5f4fa;
-  --color-dark-bg: #2f303a;
-  --color-brand: #2196f3;
-  --color-text: #757575;
-  --color-titles: #212121;
-  --color-faded: #afb1b8;
-  --font-main: 'Roboto', 'Verdana', sans-serif;
-  --font-brand: 'Raleway', sans-serif;
-  --gap: 30px;
-  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  --effect-duration: 250ms;
+  // --color-basic: #ffffff;
+  // --color-contrast: #000000;
+  // --color-light-bg: #f5f4fa;
+  // --color-dark-bg: #2f303a;
+  // --color-brand: #2196f3;
+  // --color-text: #757575;
+  // --color-titles: #212121;
+  // --color-faded: #afb1b8;
+  // --font-main: 'Roboto', 'Verdana', sans-serif;
+  // --font-brand: 'Raleway', sans-serif;
+  // --gap: 30px;
+  // --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // --effect-duration: 250ms;
+
+// fff 
+--main-font: 'Roboto', sans-serif;
+--secondary-font: 'Raleway', sans-serif;
+--color-black: #000000;
+--accent-color: #2196f3;
+--title-color: #212121;
+--text-color: #757575;
+--button-hover-color: #188ce8;
+--secondary-color: #ffffff;
+--team-bg: #f5f4fa;
+--social-svg: #afb1b8;
+--bg-color: #2f303a;
+--hero-bg: #c4c4c4;
+--padd: 30px;
+--effect-duration: 250ms;
+--timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
