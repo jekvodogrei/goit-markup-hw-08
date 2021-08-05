@@ -111,7 +111,7 @@
   visibility: hidden;
   pointer-events: none;
 
-  transition: opacity 500ms var(--timing-function), visibility 500ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function), visibility 500ms var(--timing-function);
 }
 
 .mobile-menu.open {
